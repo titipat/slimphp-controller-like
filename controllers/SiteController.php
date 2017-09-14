@@ -2,15 +2,8 @@
 
 namespace app\controllers;
 
-class SiteController
+class SiteController extends BaseController
 {
-	private $container;
-
-	public function __construct($container)
-	{
-		$this->container = $container;
-	}
-
 	public function myRoute($request, $response)
 	{
 		return $this->container->myModule;
